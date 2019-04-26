@@ -3,11 +3,11 @@
   "version": "0.1.1",
   "description": "A pulsing icon plugin.",
   "main": "src/L.Icon.Pulse.js",
-  "author": "Filip Zavadil",
+  "author": "Filip Zavadil, Yuqi Wang",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/therealice/leaflet-icon-pulse.git"
+    "url": "git+https://github.com/yuqiii1994/leaflet-icon-pulse.git"
   },
   "dependencies": {
     "leaflet": ">=0.7.3"
@@ -19,9 +19,9 @@
     "leaflet"
   ],
   "bugs": {
-    "url": "https://github.com/therealice/leaflet-icon-pulse/issues"
+    "url": "https://github.com/yuqiii1994/leaflet-icon-pulse/issues"
   },
-  "homepage": "https://github.com/therealice/leaflet-icon-pulse#readme",
+  "homepage": "https://github.com/yuqiii1994/leaflet-icon-pulse#readme",
   "directories": {
     "example": "example"
   },

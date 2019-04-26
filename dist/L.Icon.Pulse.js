@@ -5,6 +5,7 @@
         options: {
             className: '',
             iconSize: [12,12],
+            radius: 12,
             fillColor: 'red',
             color: 'red',
             animate: true,
@@ -13,6 +14,10 @@
 
         initialize: function (options) {
             L.setOptions(this,options);
+
+            // adjust radius
+            iconRadius = (options.iconSize[0] + options.iconSize[1]) / 2;
+            radiusVal = options.radius / iconRadius;
 
             // css
             
@@ -26,6 +31,13 @@
                 'animation: pulsate ' + this.options.heartbeat + 's ease-out',
                 'animation-iteration-count: infinite',
                 'animation-delay: '+ (this.options.heartbeat + .1) + 's',
+                'border-radius: ' + (radiusVal * 100).toString() + '%',
+                'height: ' + (radiusVal * 200 + 100).toString() + '%',
+                'width: ' + (radiusVal * 200 + 100).toString() + '%',
+                'margin: ' + (-radiusVal * 100).toString() + '% ' +
+                            '0 ' +
+                            '0 ' +
+                            (-radiusVal * 100).toString() + '% ',
             ];
 
             if (!this.options.animate){

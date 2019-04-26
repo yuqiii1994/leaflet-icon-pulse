@@ -6,6 +6,8 @@ leaflet-pulse-icon
 
 A very simple [Leaflet](http://leafletjs.com) plugin provides pulsing icon.
 
+(Forked with additional parameter: Radius)
+
 *Requires Leaflet 0.7.0 or newer and modern browser*
 
 ## Demo
@@ -27,7 +29,7 @@ Include the CSS and JavaScript files located in ```\dist``` directory.
 Create a new L.Icon.Pulse
 
 ```javascript
-var pulsingIcon = L.icon.pulse({iconSize:[20,20],color:'red'});
+var pulsingIcon = L.icon.pulse({iconSize:[20,20],radius:20,color:'red'});
 var marker = L.marker([50,15],{icon: pulsingIcon}).addTo(map);
 ```
 ### Options
@@ -35,6 +37,7 @@ var marker = L.marker([50,15],{icon: pulsingIcon}).addTo(map);
 | --------------- | ---------------------- | ------------- | ------------------------ |
 | color           | color of icon          | 'red'         | any CSS color            |
 | iconSize        | size of L.divIcon      | [12,12]       | <Point> [width,height]   |
+| radius          | size of L.divIcon      | 12            | <Radius> [Radius]   |
 | animate         | enable pulsing         | true          | true\|false            |
 | heartbeat       | pulsing beat           | 1             | number (seconds)         |
 
