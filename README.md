@@ -6,7 +6,7 @@ leaflet-pulse-icon
 
 A very simple [Leaflet](http://leafletjs.com) plugin provides pulsing icon.
 
-(Forked with additional parameter: Radius)
+(Forked with additional argument: Radius)
 
 *Requires Leaflet 0.7.0 or newer and modern browser*
 

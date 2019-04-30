@@ -1,7 +1,7 @@
 {
   "name": "@ansur/leaflet-pulse-icon",
   "version": "0.1.1",
-  "description": "A pulsing icon plugin.",
+  "description": "A pulsing icon plugin. Edited by Yuqi with an added additional argument of radius",
   "main": "src/L.Icon.Pulse.js",
   "author": "Filip Zavadil, Yuqi Wang",
   "license": "MIT",

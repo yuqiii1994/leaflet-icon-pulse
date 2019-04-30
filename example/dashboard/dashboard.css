@@ -1,0 +1,9 @@
+.row {
+    background-color: gray;
+    color: black;
+}
+
+.dashboard {
+    height: 90%;
+    width: 30%
+}

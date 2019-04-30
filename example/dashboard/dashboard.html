@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>map dashboard</title>
+
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+		<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js" type="application/javascript"></script>
+
+		<link rel="stylesheet" href="../../dist/L.Icon.Pulse.css" />
+        <link rel="stylesheet" href="dashboard.css" />
+		<script src="../../dist/L.Icon.Pulse.js" type="application/javascript"></script>
+
+	</head>
+	<body>
+    <div class="row">
+		<div id="map">
+        <!-- The window size get method should be included inside the division. -->
+            <script src="https://code.jquery.com/jquery-3.4.0.min.js" type="application/javascript"></script>
+            <script src="dashboardMarkerData.js" type="application/javascript"></script>
+            <script type="application/javascript">
+                var widthWin = $(window).width() * 0.7;
+                var heightWin = $(window).height() * 0.9;
+                $("#map").css({"height": parseInt(heightWin).toString() + "px",
+                                "width": parseInt(widthWin).toString() + "px"});
+            </script>
+        </div>
+        <div class="dashboard">
+            <h2><center>Train Delay Index</center></h2>
+            </br>
+            <h4>Date: April 29, 2019</h4>
+            </br>
+            <h5>AM:</h5>
+            <h2><center>--</center><h2>
+            <h5>PM:</h5>
+            <h2><center>--</center><h2>
+            <h5>AM + PM:</h5>
+            <h2><center>--</center><h2>
+        </div>
+    </div>
+		<script src="dashboard.js" type="application/javascript"></script>
+	</body>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>
